@@ -1,0 +1,21 @@
+#We are interested in the number of arrests for murder in the US,
+#which we can find in the dataset "USArests"
+
+?USArrests
+data(USArrests)
+
+#After loading the dataset, we also want to have it available as a dataframe,
+#called MuricaCrime
+
+MuricaCrime <- data.frame(USArrests, stringsAsFactors = False)
+
+#Since we just care about the data for murder, we prepare a barplot
+#showing the number of arrests for murder per 100,000 people in each of the 50
+#states in 1973.
+
+barplot(MuricaCrime$Murder,
+        main="Arrests for murder per 100k population in 1973",
+        names.arg=state.abb,
+        las=2, xlab="US States", space=1)
+
+#This was created using the Atom text editor, and then simply copied & pasted into a file created online on github.
