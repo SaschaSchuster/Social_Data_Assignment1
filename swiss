@@ -1,0 +1,18 @@
+#For our second file, we are returning to the swiss data set included in to R to try out some functions of descriptive
+#statistics, and also to include a dynamically linked file.
+
+?swiss
+data(swiss)
+source=('https://github.com/SaschaSchuster/Social_Data_Assignment1/murder1973.git')
+
+#First, let us have a look at the data we have for every canton in a view for all of Switzerland
+
+colSums(swiss)
+
+#Of course we are also interested in the mean of all columns, which we get by
+
+colMeans(swiss)
+
+#Finally, some overall, comparable data would be nice, but well rounded to the full digit.
+
+summary(swiss, digits=1)
