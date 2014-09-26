@@ -17,5 +17,7 @@ barplot(MuricaCrime$Murder,
         main="Arrests for murder per 100k population in 1973",
         names.arg=state.abb,
         las=2, xlab="US States", space=1)
+        
+#We are using the state name tags from a variable used in the state.x77 data set also included in R.
 
 #This was created using the Atom text editor, and then simply copied & pasted into a file created online on github.
