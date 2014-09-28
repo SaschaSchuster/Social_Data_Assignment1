@@ -4,11 +4,6 @@
 ?USArrests
 data(USArrests)
 
-#After loading the dataset, we also want to have it available as a dataframe,
-#called MuricaCrime
-
-MuricaCrime <- data.frame(USArrests, stringsAsFactors = False)
-
 #Since we just care about the data for murder, we prepare a barplot
 #showing the number of arrests for murder per 100,000 people in each of the 50
 #states in 1973.
